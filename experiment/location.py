@@ -6,6 +6,7 @@ import re
 from geopy.geocoders import Nominatim
 geolocator = Nominatim()
 from geopy.exc import GeocoderTimedOut
+from collections import OrderedDict
 URL_INIT = 'https://twitter.com/'
 
 file_to_read = "read.csv"
@@ -16,7 +17,18 @@ list_of_nonfound_userlocations = []
 #--------------------------------------------------------------------------------------------------
 def csv_read_and_write(read_path, write_path):
     with open(write_path ,'w') as outFile:
-        fileWriter = csv.writer(outFile)
+        field_names = ['username',
+                        'date',
+                        'retweets',
+                        'favorites',
+                        'text',
+                        'geo',
+                        'mentions',
+                        'hashtags',
+                        'id',
+                        'permalink']
+        fileWriter = csv.DictWriter(outFile, field_names, restval = '')
+        fileWriter.writeheader()
         with open(read_path,'r') as inFile:
             fileReader = csv.DictReader(inFile, delimiter=';')
             for row in fileReader:
@@ -24,28 +36,48 @@ def csv_read_and_write(read_path, write_path):
                 print("username = " + username)
                 location = findLocation(username)
                 if location is None:
-                    data = [row["username"],
-                            row["date"],
-                            row["retweets"],
-                            row["favorites"],
-                            row["text"],
-                            row["geo"],
-                            row["mentions"],
-                            row["hashtags"],
-                            row["id"],
-                            row["permalink"]]
+                    # data = ["username"],
+                    #         row["date"],
+                    #         row["retweets"],
+                    #         row["favorites"],
+                    #         row["text"],
+                    #         row["geo"],
+                    #         row["mentions"],
+                    #         row["hashtags"],
+                    #         row["id"],
+                    #         row["permalink"]]
+                    fileWriter.writerow({'username': row[username],
+                                         'date': row["date"],
+                                         'retweets': row["retweets"],
+                                         'favorites': row["favorites"],
+                                         'text': row["text"],
+                                         'geo': row["geo"],
+                                         'mentions': row["mentions"],
+                                         'hashtags': row["hashtags"],
+                                         'id': row["id"],
+                                         'permalink':  row["permalink"]})
                 else:
-                    data = [row["username"],
-                            row["date"],
-                            row["retweets"],
-                            row["favorites"],
-                            row["text"],
-                            location,
-                            row["mentions"],
-                            row["hashtags"],
-                            row["id"],
-                            row["permalink"]]
-                fileWriter.writerow(data)
+                    # data = [row["username"],
+                    #         row["date"],
+                    #         row["retweets"],
+                    #         row["favorites"],
+                    #         row["text"],
+                    #         location,
+                    #         row["mentions"],
+                    #         row["hashtags"],
+                    #         row["id"],
+                    #         row["permalink"]]
+                    fileWriter.writerow({'username': row[username],
+                                         'date': row["date"],
+                                         'retweets': row["retweets"],
+                                         'favorites': row["favorites"],
+                                         'text': row["text"],
+                                         'geo': location,
+                                         'mentions': row["mentions"],
+                                         'hashtags': row["hashtags"],
+                                         'id': row["id"],
+                                         'permalink':  row["permalink"]})
+
 
 #----------------------------------------------------------------------
 def parse_url(tweet_user):
@@ -71,7 +103,6 @@ def findLocation(user):
         else:
             splitted_location = re.split('|;|-|/|°|#', location)
         try:
-            print(splitted_location)
             if splitted_location:
                 located_location = geolocator.geocode(splitted_location[0], timeout=100)
             else:
@@ -79,6 +110,7 @@ def findLocation(user):
             if located_location:
                 # user_plus_location = (user, located_location)
                 # list_of_found_userlocations.append(user_plus_location)
+                print(located_location)
                 return located_location
             else:
                 # user_plus_incorrect_location = (user, location)
