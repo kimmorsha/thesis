@@ -100,8 +100,9 @@ def findLocation(user):
     except:
         return ""
 #------------------------------------------------------------------------------
-
-# JUNE
+'''
+JUNE
+'''
 csv_read_and_write('./marawi_tweets_june/marawi_tweets_06_01_to_06_02.csv', 
                     './marawi_tweets_with_location/marawi_tweets_june/marawi_tweets_06_01_to_06_02.csv')
 csv_read_and_write('./marawi_tweets_june/marawi_tweets_06_02_to_06_03.csv', 
