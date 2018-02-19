@@ -3,9 +3,9 @@
 from polyglot.detect import Detector
 import string
 
-text = "China (simplified Chinese: 中国; traditional Chinese: 中國)"
+text = "Huhuhuhu please pray for marawi huwag magpakatanga tayo ay makibaka please duterte help us po"
 
-text = filter(lambda x: x in string.printable, text)
+# text = filter(lambda x: x in string.printable, text)
 languages = Detector(text.decode('utf-8'), quiet=True).languages
 is_english = False
 max_confidence = 0

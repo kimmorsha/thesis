@@ -111,10 +111,10 @@ MAY
 # csv_read_and_write('./marawi_tweets_may/marawi_tweets_05_26_to_05_27.csv', 
 #                     './marawi_tweets_with_location/marawi_tweets_may/marawi_tweets_05_26_to_05_27.csv')
 csv_read_and_write('./marawi_tweets_may/marawi_tweets_05_27_to_05_28.csv', 
-                    './marawi_tweets_with_location/marawi_tweets_may/marawi_tweets_05_27_to_05_28.csv')
-csv_read_and_write('./marawi_tweets_may/marawi_tweets_05_29_to_05_30.csv', 
-                    './marawi_tweets_with_location/marawi_tweets_may/marawi_tweets_05_29_to_05_30.csv')
-csv_read_and_write('./marawi_tweets_may/marawi_tweets_05_30_to_05_31.csv', 
-                    './marawi_tweets_with_location/marawi_tweets_may/marawi_tweets_05_30_to_05_31.csv')
+                    './marawi_tweets_with_location2/marawi_tweets_may/marawi_tweets_05_27_to_05_28.csv')
+# csv_read_and_write('./marawi_tweets_may/marawi_tweets_05_29_to_05_30.csv', 
+#                     './marawi_tweets_with_location/marawi_tweets_may/marawi_tweets_05_29_to_05_30.csv')
+# csv_read_and_write('./marawi_tweets_may/marawi_tweets_05_30_to_05_31.csv', 
+#                     './marawi_tweets_with_location/marawi_tweets_may/marawi_tweets_05_30_to_05_31.csv')
 
 
