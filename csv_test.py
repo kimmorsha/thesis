@@ -17,7 +17,8 @@ def csv_dict_reader(file_obj):
     Read a CSV file using csv.DictReader
     """
     reader = csv.DictReader(file_obj, delimiter=';')
-    for line in reader:
+    for row in reader:
+        tweet = row[]
         
 #---------------------------------------------------------------------------------------------------------
 def parse_url(tweet_user):
