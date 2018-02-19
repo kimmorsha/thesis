@@ -1,4 +1,5 @@
-# coding=utf-8
+# -*- coding: utf-8 -*-
+
 import csv
 import urllib
 from bs4 import BeautifulSoup
@@ -93,6 +94,7 @@ def findLocation(user):
     except:
         print("error in opening the url")
         return
+
     html = response.read()
     soup = BeautifulSoup(html, "lxml")
     location = soup.find('span','ProfileHeaderCard-locationText').text.encode('utf8').strip('\n').strip()
@@ -107,6 +109,7 @@ def findLocation(user):
                 located_location = geolocator.geocode(splitted_location[0], timeout=100)
             else:
                 located_location = geolocator.geocode(location, timeout=100)
+            print(located_location)
             if located_location:
                 # user_plus_location = (user, located_location)
                 # list_of_found_userlocations.append(user_plus_location)
