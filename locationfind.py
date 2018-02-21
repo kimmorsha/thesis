@@ -10,7 +10,7 @@ from geopy.exc import GeocoderTimedOut
 URL_INIT = 'https://twitter.com/'
 
 file_to_read = "./marawi_tweets_may/marawi_tweets_05_23_to_05_24.csv"
-file_to_write = "./marawi_tweets_with_location/marawi_tweets_may/marawi_tweets_05_23_to_05_24.csv"
+file_to_write = "./marawi_tweets_with_location2/marawi_tweets_may/marawi_tweets_05_23_to_05_24.csv"
 
 #The located userlocations are appended to this list
 list_of_found_userlocations = []
@@ -110,11 +110,11 @@ MAY
 #                     './marawi_tweets_with_location/marawi_tweets_may/marawi_tweets_05_25_to_05_26.csv')
 # csv_read_and_write('./marawi_tweets_may/marawi_tweets_05_26_to_05_27.csv', 
 #                     './marawi_tweets_with_location/marawi_tweets_may/marawi_tweets_05_26_to_05_27.csv')
-csv_read_and_write('./marawi_tweets_may/marawi_tweets_05_27_to_05_28.csv', 
-                    './marawi_tweets_with_location2/marawi_tweets_may/marawi_tweets_05_27_to_05_28.csv')
+# csv_read_and_write('./marawi_tweets_may/marawi_tweets_05_27_to_05_28.csv', 
+#                     './marawi_tweets_with_location2/marawi_tweets_may/marawi_tweets_05_27_to_05_28.csv')
 # csv_read_and_write('./marawi_tweets_may/marawi_tweets_05_29_to_05_30.csv', 
-#                     './marawi_tweets_with_location/marawi_tweets_may/marawi_tweets_05_29_to_05_30.csv')
-# csv_read_and_write('./marawi_tweets_may/marawi_tweets_05_30_to_05_31.csv', 
-#                     './marawi_tweets_with_location/marawi_tweets_may/marawi_tweets_05_30_to_05_31.csv')
+#                     './marawi_tweets_with_location2/marawi_tweets_may/marawi_tweets_05_29_to_05_30.csv')
+csv_read_and_write('./marawi_tweets_may/marawi_tweets_05_30_to_05_31.csv', 
+                    './marawi_tweets_with_location2/marawi_tweets_may/marawi_tweets_05_30_to_05_31.csv')
 
 

@@ -51,7 +51,7 @@ def detect_language(tweet):
 				else:
 					is_english = False
 			else:
-				if float(language.confidence) >= 5.0:
+				if float(language.confidence) >= 20.0:
 					is_english = False
 		return is_english
 	else:

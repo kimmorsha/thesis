@@ -103,15 +103,15 @@ def findLocation(user):
 
 # september
 print("for september")
-csv_read_and_write('./marawi_tweets_september/marawi_tweets_09_01_to_09_05.csv', 
+csv_read_and_write('./marawi_tweets_raw/marawi_tweets_september/marawi_tweets_09_01_to_09_05.csv', 
                     './marawi_tweets_with_location/marawi_tweets_september/marawi_tweets_09_01_to_09_05.csv')
-csv_read_and_write('./marawi_tweets_september/marawi_tweets_09_05_to_09_10.csv', 
+csv_read_and_write('./marawi_tweets_raw/marawi_tweets_september/marawi_tweets_09_05_to_09_10.csv', 
                     './marawi_tweets_with_location/marawi_tweets_september/marawi_tweets_09_05_to_09_10.csv')
-csv_read_and_write('./marawi_tweets_september/marawi_tweets_09_10_to_09_15.csv', 
+csv_read_and_write('./marawi_tweets_raw/marawi_tweets_september/marawi_tweets_09_10_to_09_15.csv', 
                     './marawi_tweets_with_location/marawi_tweets_september/marawi_tweets_09_10_to_09_15.csv')
-csv_read_and_write('./marawi_tweets_september/marawi_tweets_09_15_to_09_20.csv', 
+csv_read_and_write('./marawi_tweets_raw/marawi_tweets_september/marawi_tweets_09_15_to_09_20.csv', 
                     './marawi_tweets_with_location/marawi_tweets_september/marawi_tweets_09_15_to_09_20.csv')
-csv_read_and_write('./marawi_tweets_september/marawi_tweets_09_20_to_09_25.csv', 
+csv_read_and_write('./marawi_tweets_raw/marawi_tweets_september/marawi_tweets_09_20_to_09_25.csv', 
                     './marawi_tweets_with_location/marawi_tweets_september/marawi_tweets_09_20_to_09_25.csv')
-csv_read_and_write('./marawi_tweets_september/marawi_tweets_09_25_to_09_30.csv', 
+csv_read_and_write('./marawi_tweets_raw/marawi_tweets_september/marawi_tweets_09_25_to_09_30.csv', 
                     './marawi_tweets_with_location/marawi_tweets_september/marawi_tweets_09_25_to_09_30.csv')
