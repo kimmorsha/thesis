@@ -4,9 +4,9 @@ import csv
 from polyglot.detect import Detector
 import string
 
-read_file = "../marawi_tweets_with_location/marawi_tweets_may/marawi_tweets_05_26_to_05_27.csv"
-write_file_with_locations = "../marawi_tweets_with_locations_separation/marawi_tweets_may/with_locations/marawi_tweets_with_locations_05_26_to_05_27.csv"
-write_file_with_no_locations = "../marawi_tweets_with_locations_separation/marawi_tweets_may/no_locations/marawi_tweets_with_no_locations_05_26_to_05_27.csv"
+read_file = "../marawi_tweets_with_location/marawi_tweets_june/marawi_tweets_06_07_to_06_08.csv"
+write_file_with_locations = "../marawi_tweets_with_locations_separation/marawi_tweets_june/with_locations/marawi_tweets_with_locations_06_07_to_06_08.csv"
+write_file_with_no_locations = "../marawi_tweets_with_locations_separation/marawi_tweets_june/no_locations/marawi_tweets_with_no_locations_06_07_to_06_08.csv"
 
 #--------------------------------------------------------------------------------------------------
 def write_new_csv_with_locations(read_path, write_path1, write_path2):
