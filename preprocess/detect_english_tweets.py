@@ -7,7 +7,7 @@ import string
 file_to_read = "./marawi_tweets_05_23_to_05_24.csv"
 file_to_write = "./marawi_english_tweets_05_23_to_05_24.csv"
 
-#--------------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------------------
 def csv_read_and_write(read_path, write_path):
     with open(write_path ,'w') as outFile:
         fileWriter = csv.writer(outFile)
@@ -36,26 +36,31 @@ def csv_read_and_write(read_path, write_path):
 #-----------------------------------------------------------------------------------------------------
 def detect_language(tweet):
 	# tweet = filter(lambda x: x in string.printable, tweet)
-	is_utf8 = isUTF8Strict(tweet) 
-	if is_utf8:
+	# is_utf8 = isUTF8Strict(tweet) 
+	# if is_utf8:
 		# tweet = tweet.decode('utf-8')
-		languages = Detector(tweet.decode('utf-8'), quiet=True).languages
-		is_english = False
-		max_confidence = 0
-		for language in languages:
-			if language.name == "English":
-				max_confidence = language.confidence
-				print(language.confidence)
-				if float(language.confidence) >= 93.0:
-					is_english = True
-				else:
-					is_english = False
-			else:
-				if float(language.confidence) >= 20.0:
-					is_english = False
-		return is_english
-	else:
-		return False
+    try:
+        languages = Detector(tweet, quiet = True).languages
+        is_english = False
+        max_confidence = 0
+
+        for language in languages:
+            if language.name == "English":
+                max_confidence = language.confidence
+                print(language.confidence)
+                if float(language.confidence) >= 93.0:
+                   is_english = True
+                else:
+                    is_english = False
+            else:
+                if float(language.confidence) >= 20.0:
+                    is_english = False
+        return is_english
+    except UnicodeDecodeError:
+        print("UnicodeDecodeError ew")
+	# else:
+	# 	return False
+
 #------------------------------------------------------------------------------------------------------
 def isUTF8Strict(data):
     try:

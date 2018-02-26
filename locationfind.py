@@ -18,39 +18,56 @@ list_of_found_userlocations = []
 #The not located userlocations are appended to this list. 
 #Maybe they contain some typo or something else like that. 
 list_of_nonfound_userlocations = []
+
 #--------------------------------------------------------------------------------------------------
 def csv_read_and_write(read_path, write_path):
     with open(write_path ,'w') as outFile:
         fileWriter = csv.writer(outFile)
         with open(read_path,'r') as inFile:
-            fileReader = csv.DictReader(inFile, delimiter=';')
+            fileReader = csv.reader(inFile)
             for row in fileReader:
-                username = row["username"]
-                print("username = " + username)
-                location = findLocation(username)
-                if location is None:
-                    data = [row["username"],
-                            row["date"],
-                            row["retweets"],
-                            row["favorites"],
-                            row["text"],
-                            row["geo"],
-                            row["mentions"],
-                            row["hashtags"],
-                            row["id"],
-                            row["permalink"]]
+                original_location = row[5]
+                print("original_location = " + original_location)
+                if original_location is not "":
+                    data = [row[0],
+                            row[1],
+                            row[2],
+                            row[3],
+                            row[4],
+                            row[5],
+                            row[6],
+                            row[7],
+                            row[8],
+                            row[9]]
+                    fileWriter.writerow(data)
                 else:
-                    data = [row["username"],
-                            row["date"],
-                            row["retweets"],
-                            row["favorites"],
-                            row["text"],
-                            location,
-                            row["mentions"],
-                            row["hashtags"],
-                            row["id"],
-                            row["permalink"]]
-                fileWriter.writerow(data)
+                    username = row[0]
+                    print("username = " + username)
+                    location = findLocation(username)
+                    if location is None:
+                        data = [row[0],
+                                row[1],
+                                row[2],
+                                row[3],
+                                row[4],
+                                row[5],
+                                row[6],
+                                row[7],
+                                row[8],
+                                row[9]]
+                    else:
+                        data = [row[0],
+                                row[1],
+                                row[2],
+                                row[3],
+                                row[4],
+                                location,
+                                row[6],
+                                row[7],
+                                row[8],
+                                row[9]]
+                    fileWriter.writerow(data)
+                
 
 #----------------------------------------------------------------------
 def parse_url(tweet_user):
@@ -102,19 +119,7 @@ def findLocation(user):
 '''
 MAY
 '''
-# csv_read_and_write('./marawi_tweets_may/marawi_tweets_05_24_to_05_25.csv', 
-#                     './marawi_tweets_with_location/marawi_tweets_may/marawi_tweets_05_24_to_05_25.csv')
-# csv_read_and_write('./marawi_tweets_may/marawi_tweets_05_24.csv', 
-#                     './marawi_tweets_with_location/marawi_tweets_may/marawi_tweets_05_24.csv')
-# csv_read_and_write('./marawi_tweets_may/marawi_tweets_05_25_to_05_26.csv', 
-#                     './marawi_tweets_with_location/marawi_tweets_may/marawi_tweets_05_25_to_05_26.csv')
-# csv_read_and_write('./marawi_tweets_may/marawi_tweets_05_26_to_05_27.csv', 
-#                     './marawi_tweets_with_location/marawi_tweets_may/marawi_tweets_05_26_to_05_27.csv')
-# csv_read_and_write('./marawi_tweets_may/marawi_tweets_05_27_to_05_28.csv', 
-#                     './marawi_tweets_with_location2/marawi_tweets_may/marawi_tweets_05_27_to_05_28.csv')
-# csv_read_and_write('./marawi_tweets_may/marawi_tweets_05_29_to_05_30.csv', 
-#                     './marawi_tweets_with_location2/marawi_tweets_may/marawi_tweets_05_29_to_05_30.csv')
-csv_read_and_write('./marawi_tweets_may/marawi_tweets_05_30_to_05_31.csv', 
-                    './marawi_tweets_with_location2/marawi_tweets_may/marawi_tweets_05_30_to_05_31.csv')
+csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_may/no_locations_yet/marawi_tweets_05_25.csv', 
+                   './marawi_tweets_with_location/marawi_tweets_may/marawi_tweets_05_25_1.csv')
 
 
