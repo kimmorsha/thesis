@@ -3,21 +3,24 @@
 import csv
 from polyglot.detect import Detector
 import string
+import preprocessor as p
 
 file_to_read = "./marawi_tweets_05_23_to_05_24.csv"
 file_to_write = "./marawi_english_tweets_05_23_to_05_24.csv"
 
 #------------------------------------------------------------------------------------------------------
 def csv_read_and_write(read_path, write_path):
-    with open(write_path ,'w') as outFile:
+    with open(write_path ,'wb') as outFile:
         fileWriter = csv.writer(outFile)
         i = 1;
         with open(read_path,'r') as inFile:
             fileReader = csv.reader(inFile)
             for row in fileReader:
                 tweet = row[4]
-                print(i, tweet)
-                is_english = detect_language(tweet)
+                p.set_options(p.OPT.URL, p.OPT.MENTION)
+                cleaned_tweet = p.clean(tweet)
+                print(i, cleaned_tweet)
+                is_english = detect_language(cleaned_tweet)
                 print(is_english)
                 if is_english is True:
                     data = [row[0],
@@ -58,6 +61,7 @@ def detect_language(tweet):
         return is_english
     except UnicodeDecodeError:
         print("UnicodeDecodeError ew")
+        return False
 	# else:
 	# 	return False
 
