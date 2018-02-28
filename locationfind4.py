@@ -129,17 +129,17 @@ JULY
 # csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_july/marawi_tweets_07_04_to_07_05.csv', 
 #                     './marawi_tweets_with_location2/marawi_tweets_july/marawi_tweets_07_04_to_07_05.csv')
 
-csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_july/marawi_tweets_07_04.csv', 
-                    './marawi_tweets_with_location/marawi_tweets_july/official/marawi_tweets_07_04.csv')
+# csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_july/marawi_tweets_07_04.csv', 
+#                     './marawi_tweets_with_location/marawi_tweets_july/official/marawi_tweets_07_04.csv')
 
-csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_july/marawi_tweets_07_05.csv', 
-                    './marawi_tweets_with_location/marawi_tweets_july/official/marawi_tweets_07_05.csv')
+# csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_july/marawi_tweets_07_05.csv', 
+#                     './marawi_tweets_with_location/marawi_tweets_july/official/marawi_tweets_07_05.csv')
 
-csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_july/marawi_tweets_07_06.csv', 
-                    './marawi_tweets_with_location/marawi_tweets_july/official/marawi_tweets_07_06.csv')
+# csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_july/marawi_tweets_07_06.csv', 
+#                     './marawi_tweets_with_location/marawi_tweets_july/official/marawi_tweets_07_06.csv')
 
-csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_july/marawi_tweets_07_07.csv', 
-                    './marawi_tweets_with_location/marawi_tweets_july/official/marawi_tweets_07_07.csv')
+# csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_july/marawi_tweets_07_07.csv', 
+#                     './marawi_tweets_with_location/marawi_tweets_july/official/marawi_tweets_07_07.csv')
 
 csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_july/marawi_tweets_07_08_to_07_09.csv', 
                     './marawi_tweets_with_location2/marawi_tweets_july/marawi_tweets_07_08_to_07_09.csv')
