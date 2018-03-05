@@ -5,13 +5,16 @@ from polyglot.detect import Detector
 import string
 import preprocessor as p
 
-file_to_read = "./marawi_tweets_05_23_to_05_24.csv"
-file_to_write = "./marawi_english_tweets_05_23_to_05_24.csv"
+file_to_read = "../marawi_tweets_with_location/marawi_tweets_june/official/all_tweets/marawi_tweets_06_04.csv"
+file_of_english_tweets = "../marawi_tweets_with_location/marawi_tweets_june/official/english_tweets/marawi_tweets_06_04.csv"
+file_of_non_english_tweets = "../marawi_tweets_with_location/marawi_tweets_june/official/non_english_tweets/marawi_tweets_06_04.csv"
 
 #------------------------------------------------------------------------------------------------------
-def csv_read_and_write(read_path, write_path):
-    with open(write_path ,'wb') as outFile:
-        fileWriter = csv.writer(outFile)
+def csv_read_and_write(read_path):
+    with open (file_of_english_tweets, 'w') as outFile1, open (file_of_non_english_tweets, 'w') as outFile2:
+        file_writer1 = csv.writer(outFile1)
+        file_writer2 = csv.writer(outFile2)
+
         i = 1;
         with open(read_path,'r') as inFile:
             fileReader = csv.reader(inFile)
@@ -20,20 +23,24 @@ def csv_read_and_write(read_path, write_path):
                 p.set_options(p.OPT.URL, p.OPT.MENTION)
                 cleaned_tweet = p.clean(tweet)
                 print(i, cleaned_tweet)
-                is_english = detect_language(cleaned_tweet)
+                is_english = detect_language(cleaned_tweet) # where we call the function that detects if it is english or not
                 print(is_english)
+                
+                data = [row[0],
+                        row[1],
+                        row[2],
+                        row[3],
+                        row[4],
+                        row[5],
+                        row[6],
+                        row[7],
+                        row[8],
+                        row[9]]
+
                 if is_english is True:
-                    data = [row[0],
-                            row[1],
-                            row[2],
-                            row[3],
-                            row[4],
-                            row[5],
-                            row[6],
-                            row[7],
-                            row[8],
-                            row[9]]
-                    fileWriter.writerow(data)
+                    file_writer1.writerow(data)
+                else:
+                    file_writer2.writerow(data)
                 i = i + 1
 
 #-----------------------------------------------------------------------------------------------------
@@ -78,4 +85,4 @@ def isUTF8Strict(data):
         return True
 
 #--------------------------------------------------------------------------------------------------------
-csv_read_and_write(file_to_read, file_to_write)
+csv_read_and_write(file_to_read)
