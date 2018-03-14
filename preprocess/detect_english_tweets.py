@@ -114,6 +114,7 @@ def clean_latin1(data):
         for _hex, _char in LATIN_1_CHARS:
             data = data.replace(_hex, _char)
         return data.encode('utf8')
+
 #--------------------------------------------------------------------------------------------------------
 
 # csv_read_and_write("../marawi_tweets_with_location/marawi_tweets_august/official/all_tweets/marawi_tweets_08_01.csv",
