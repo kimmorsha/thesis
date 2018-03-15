@@ -59,12 +59,12 @@ def detect_language(tweet):
             if language.name == "English":
                 max_confidence = language.confidence
                 print(language.confidence)
-                if float(language.confidence) >= 93.0:
+                if float(language.confidence) >= 97.0:
                    is_english = True
                 else:
                     is_english = False
             else:
-                if float(language.confidence) >= 10.0:
+                if float(language.confidence) >= 7.0:
                     is_english = False
         return is_english
     except UnicodeDecodeError:
