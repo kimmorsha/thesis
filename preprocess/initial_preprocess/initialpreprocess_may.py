@@ -14,6 +14,7 @@ def csv_read_and_write(read_path, write_path):
             fileReader = csv.reader(inFile)
             for row in fileReader:
                 tweet = row[4]
+                tweet = tweet.encode('ascii', 'ignore')
                 p.set_options(p.OPT.URL, p.OPT.MENTION, p.OPT.HASHTAG)
                 cleaned_tweet = p.clean(tweet)
                 print(i)
