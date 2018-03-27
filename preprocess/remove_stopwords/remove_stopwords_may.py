@@ -4,6 +4,7 @@ import csv
 import string
 import re
 import io
+import itertools
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import sys
@@ -26,9 +27,9 @@ def csv_read_and_write(read_path, write_path):
                 tweet = str(row[4])
                 tweet = tweet.decode('utf-8', 'replace')
                 tweet = remove_punctuations(tweet)
-
-                tweet = "".join(re.findall('[A-Z][^A-Z]*', tweet))
+                # tweet = split_words(tweet)
                 tweet = tweet.lower()
+                tweet = improve_repeated(tweet)
 
                 print(tweet)
                 word_tokens = word_tokenize(tweet)
@@ -65,6 +66,27 @@ def csv_read_and_write(read_path, write_path):
 def remove_punctuations(s):
     clean = ''.join(c for c in s if c in validchars)
     return clean
+
+def improve_repeated(text):
+    text = ''.join(''.join(s)[:2] for _, s in itertools.groupby(text))
+    print(text)
+    return text 
+
+def remove_url(text):
+    mypatt = "http[s]?://[a-zA-Z0-9]*"
+    strongpatt = 'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
+    urls = re.findall(strongpatt, text)
+    f = 0
+    for url in urls:
+        i = text.index(url)
+        text = text[:i] + text[i+len(url):]
+    return text
+
+def split_words(text):
+    ans = ""
+    for a in re.findall('[A-Z][^A-Z]*', text):
+        ans+=a.strip()+' '
+    return ans
 
 # csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_may/official/english_tweets/marawi_tweets_05_23.csv",
 #                    "../../marawi_tweets_with_location/marawi_tweets_may/official/no_stopwords_punc/marawi_tweets_05_23.csv")

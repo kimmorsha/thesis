@@ -22,7 +22,7 @@ def csv_read_and_write(read_path, write_path):
                 tweet = tweet.decode('utf-8', 'replace')
                 tweet = remove_punctuations(tweet)
                 print(tweet)
-                
+                    
                 data = [row[0],
                         row[1],
                         row[2],
