@@ -141,8 +141,8 @@ JULY
 # csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_july/marawi_tweets_07_07.csv', 
 #                     './marawi_tweets_with_location/marawi_tweets_july/official/marawi_tweets_07_07.csv')
 
-csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_july/marawi_tweets_07_08_to_07_09.csv', 
-                    './marawi_tweets_with_location2/marawi_tweets_july/marawi_tweets_07_08_to_07_09.csv')
+csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_july/marawi_tweets_07_08.csv', 
+                    './marawi_tweets_with_location2/marawi_tweets_july/marawi_tweets_07_08.csv')
 
 # csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_july/marawi_tweets_07_09_to_07_10.csv', 
 #                     './marawi_tweets_with_location2/marawi_tweets_july/marawi_tweets_07_09_to_07_10.csv')
