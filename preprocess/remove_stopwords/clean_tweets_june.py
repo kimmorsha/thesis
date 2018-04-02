@@ -29,30 +29,31 @@ def csv_read_and_write(read_path, write_path):
                 tweet = remove_punctuations(tweet)
                 # tweet = split_words(tweet)
                 tweet = tweet.lower()
+                tweet = has_prayformarawi(tweet)
                 tweet = improve_repeated(tweet)
 
                 print(tweet)
-                word_tokens = word_tokenize(tweet)
-                filtered_sentence = [w for w in word_tokens if not w in stop_words]
-                filtered_sentence = []
+                # word_tokens = word_tokenize(tweet)
+                # filtered_sentence = [w for w in word_tokens if not w in stop_words]
+                # filtered_sentence = []
 
-                for w in word_tokens:
-                    if w not in stop_words:
-                        filtered_sentence.append(w)
+                # for w in word_tokens:
+                #     if w not in stop_words:
+                #         filtered_sentence.append(w)
 
-                cleaned_sentence = []
+                # cleaned_sentence = []
 
-                for w in filtered_sentence:
-                    w = str(w)
-                    cleaned_sentence.append(w)
+                # for w in filtered_sentence:
+                #     w = str(w)
+                #     cleaned_sentence.append(w)
 
-                print(cleaned_sentence)
+                # print(cleaned_sentence)
 
                 data = [row[0],
                         row[1],
                         row[2],
                         row[3],
-                        cleaned_sentence,
+                        tweet, # cleaned_sentence,
                         row[5],
                         row[6],
                         row[7],
@@ -70,7 +71,6 @@ def remove_punctuations(s):
 
 def improve_repeated(text):
     text = ''.join(''.join(s)[:2] for _, s in itertools.groupby(text))
-    print(text)
     return text 
 
 def remove_url(text):
@@ -88,6 +88,9 @@ def split_words(text):
     for a in re.findall('[A-Z][^A-Z]*', text):
         ans+=a.strip()+' '
     return ans
+
+def has_prayformarawi(tweet):
+    return tweet.replace("prayformarawi", "pray for marawi")
 
 # csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_june/official/english_tweets/marawi_tweets_06_01.csv",
 #                    "../../marawi_tweets_with_location/marawi_tweets_june/official/cleaned_tweets/marawi_tweets_06_01.csv")
