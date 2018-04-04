@@ -14,8 +14,8 @@ writeFile2 = '../marawi_tweets_with_location/marawi_tweets_september/official/fi
 #------------------------------------------------------------------------------------------------------
 def analyze_emotions(read_path, write_path1, write_path2):
 	natural_language_understanding = NaturalLanguageUnderstandingV1(
-		username='ab458f9c-8b2e-4688-9ec0-ce7810b6f997',
-		password='Mnh5qTNFYrNN',
+		username='5e002a7b-361d-4611-9bea-2175ab049b34',
+		password='5BvZsR4TRc0u',
 		version='2018-03-16')
 
 	with open (write_path1, 'wb') as outFile1, open (write_path2, 'w') as outFile2:
