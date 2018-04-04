@@ -121,35 +121,53 @@ def findLocation(user):
 csv_read_and_write('../to_be_skimbordeng/marawi_tweets_05_28_to_05_29.csv', 
                     '../to_be_skimbordeng/with_locations/marawi_tweets_05_28_to_05_29.csv')
 
-# csv_read_and_write('./marawi_tweets_august/marawi_tweets_08_03_to_08_05.csv', 
-#                     './marawi_tweets_with_location2/marawi_tweets_august/marawi_tweets_08_03_to_08_05.csv')
+csv_read_and_write('../to_be_skimbordeng/marawi_tweets_05_31_to_06_01.csv', 
+                    '../to_be_skimbordeng/with_locations/marawi_tweets_05_31_to_06_01.csv')
 
-# csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_august/walay_pulos/marawi_tweets_08_05_to_08_07.csv', 
-#                     './marawi_tweets_with_location2/marawi_tweets_august/marawi_tweets_08_05_to_08_07.csv')
+csv_read_and_write('../to_be_skimbordeng/marawi_tweets_06_11_to_06_12.csv', 
+                    '../to_be_skimbordeng/with_locations/marawi_tweets_06_11_to_06_12.csv')
 
-# csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_august/marawi_tweets_08_07_to_08_09.csv', 
-#                     './marawi_tweets_with_location2/marawi_tweets_august/marawi_tweets_08_07_to_08_09.csv')
+csv_read_and_write('../to_be_skimbordeng/marawi_tweets_06_24_to_06_25.csv', 
+                    '../to_be_skimbordeng/with_locations/marawi_tweets_06_24_to_06_25.csv')
 
-# csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_august/marawi_tweets_08_09_to_08_13.csv', 
-#                     './marawi_tweets_with_location2/marawi_tweets_august/marawi_tweets_08_09_to_08_13.csv')
+csv_read_and_write('../to_be_skimbordeng/marawi_tweets_06_27_to_06_28.csv', 
+                    '../to_be_skimbordeng/with_locations/marawi_tweets_06_27_to_06_28.csv')
 
-# csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_august/marawi_tweets_08_14_to_08_16.csv', 
-#                     './marawi_tweets_with_location2/marawi_tweets_august/marawi_tweets_08_14_to_08_16.csv')
+csv_read_and_write('../to_be_skimbordeng/marawi_tweets_07_03_to_07_04.csv', 
+                    '../to_be_skimbordeng/with_locations/marawi_tweets_07_03_to_07_04.csv')
 
-# csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_august/marawi_tweets_08_16_to_08_17.csv', 
-#                     './marawi_tweets_with_location2/marawi_tweets_august/marawi_tweets_08_16_to_08_17.csv')
+csv_read_and_write('../to_be_skimbordeng/marawi_tweets_07_08_to_07_09.csv', 
+                    '../to_be_skimbordeng/with_locations/marawi_tweets_07_08_to_07_09.csv')
 
-# csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_august/marawi_tweets_08_17_to_08_20.csv', 
-#                     './marawi_tweets_with_location2/marawi_tweets_august/marawi_tweets_08_17_to_08_20.csv')
+csv_read_and_write('../to_be_skimbordeng/marawi_tweets_07_09_to_07_11.csv', 
+                    '../to_be_skimbordeng/with_locations/marawi_tweets_07_09_to_07_11.csv')
 
-# csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_august/marawi_tweets_08_20_to_08_21.csv', 
-#                     './marawi_tweets_with_location2/marawi_tweets_august/marawi_tweets_08_20_to_08_21.csv')
+csv_read_and_write('../to_be_skimbordeng/marawi_tweets_07_23_to_07_24.csv', 
+                    '../to_be_skimbordeng/with_locations/marawi_tweets_07_23_to_07_24.csv')
 
-# csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_august/marawi_tweets_08_21_to_08_22.csv', 
-#                     './marawi_tweets_with_location2/marawi_tweets_august/marawi_tweets_08_21_to_08_22.csv')
+csv_read_and_write('../to_be_skimbordeng/marawi_tweets_08_05_to_08_07.csv', 
+                    '../to_be_skimbordeng/with_locations/marawi_tweets_08_05_to_08_07.csv')
 
-# csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_august/marawi_tweets_08_22_to_08_23.csv', 
-#                     './marawi_tweets_with_location2/marawi_tweets_august/marawi_tweets_08_22_to_08_23.csv')
+csv_read_and_write('../to_be_skimbordeng/marawi_tweets_08_13_to_08_14.csv', 
+                    '../to_be_skimbordeng/with_locations/marawi_tweets_08_13_to_08_14.csv')
 
-# csv_read_and_write('./marawi_tweets_with_location2/marawi_tweets_august/marawi_tweets_08_25_to_08_27_discontinued.csv', 
-#                     './marawi_tweets_with_location2/marawi_tweets_august/marawi_tweets_08_25_to_08_27.csv')
+csv_read_and_write('../to_be_skimbordeng/marawi_tweets_08_23_to_08_25.csv', 
+                    '../to_be_skimbordeng/with_locations/marawi_tweets_08_23_to_08_25.csv')
+
+csv_read_and_write('../to_be_skimbordeng/marawi_tweets_08_31_to_09_01.csv', 
+                    '../to_be_skimbordeng/with_locations/marawi_tweets_08_31_to_09_01.csv')
+
+csv_read_and_write('../to_be_skimbordeng/marawi_tweets_09_05_to_09_10.csv', 
+                    '../to_be_skimbordeng/with_locations/marawi_tweets_09_05_to_09_10.csv')
+
+csv_read_and_write('../to_be_skimbordeng/marawi_tweets_09_15_to_09_17.csv', 
+                    '../to_be_skimbordeng/with_locations/marawi_tweets_09_15_to_09_17.csv')
+
+csv_read_and_write('../to_be_skimbordeng/marawi_tweets_09_29_to_10_01.csv', 
+                    '../to_be_skimbordeng/with_locations/marawi_tweets_09_29_to_10_01.csv')
+
+csv_read_and_write('../to_be_skimbordeng/marawi_tweets_10_04_to_10_05.csv', 
+                    '../to_be_skimbordeng/with_locations/marawi_tweets_10_04_to_10_05.csv')
+
+csv_read_and_write('../to_be_skimbordeng/marawi_tweets_10_21_to_10_24.csv', 
+                    '../to_be_skimbordeng/with_locations/marawi_tweets_10_21_to_10_24.csv')
