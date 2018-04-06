@@ -9,19 +9,20 @@ from geopy.exc import GeocoderTimedOut
 # file_to_read = "../marawi_tweets_with_location/marawi_tweets_september/official/final_tweets/marawi_tweets_09_03.csv"
 # file_to_write1 = "../marawi_tweets_with_location/marawi_tweets_september/official/philippines_tweets/marawi_tweets_09_03.csv"
 # file_to_write2 = "../marawi_tweets_with_location/marawi_tweets_september/official/other_locations/marawi_tweets_09_03.csv"
-location = "(['MSU', ' Marawi City', ' Philippines'], Location((45.6639448, -111.076470877, 0.0)))"
+location = "(['Los Banos'])"
 #------------------------------------------------------------------------------------------------------
-def csv_read_and_write(read_path, write_path1, write_path2):
-    with open (write_path1, 'wb') as outFile1, open(write_path2, 'wb') as outFile2:
-        file_writer1 = csv.writer(outFile1)
-        file_writer2 = csv.writer(outFile2)
+def csv_read_and_write(loc):
+    # with open (write_path1, 'wb') as outFile1, open(write_path2, 'wb') as outFile2:
+    #     file_writer1 = csv.writer(outFile1)
+    #     file_writer2 = csv.writer(outFile2)
 
-        with open(read_path,'r') as inFile:
-            fileReader = csv.reader(inFile)
-            for row in fileReader:
-                loc = row[5]
-                print("location : " + str(loc))
-                location = get_location(loc)
+    #     with open(read_path,'r') as inFile:
+    #         fileReader = csv.reader(inFile)
+    #         for row in fileReader:
+    #             loc = row[5]
+    #             print("location : " + str(loc))
+                # loc = loc.encode('utf-8')
+                # location = get_location(loc)
                 print("Address : " + str(location.address))
                 print("Latitude : " + str(location.latitude))
                 print("Longitude : " + str(location.longitude))
@@ -65,15 +66,15 @@ def get_location(location):
         place = place[index_2+1:]
         print("place String = " + str(place))
 
+        # place = place.decode('utf-8')
         # for special cases: ACRONYMS
-        place = place.encode('utf-8')
 
-        if "'CEB'" in place:
-            place.replace("'CEB'", "Cebu")
-        elif "'MNL'" in place:
-            place.replace("'MNL'", "Manila")
-        elif "'LB'" in place:
-            place.replace("'LB'", "Los Baños")
+        # if "'CEB'" in place:
+        #     place.replace("'CEB'", "Cebu")
+        # elif "'CDO'" in place:
+        #     place.replace("'CDO'", "Cagadayan De Oro")
+        # elif "'ARMM'" in place:
+        #     place.replace("'CDO'", "Cagadayan De Oro")
 
 
         location = geolocator.geocode(place)
@@ -85,7 +86,7 @@ def get_location(location):
 #-----------------------------------------------------------------------------------------------------
 def is_philippines(address):
     address = address.lower()
-    return "philippines" in address:
+    return "philippines" in address
         
 #-----------------------------------------------------------------------------------------------------
 def find_nth(haystack, needle, n):
