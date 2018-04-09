@@ -5,6 +5,10 @@ import string
 from geopy.geocoders import Nominatim
 geolocator = Nominatim()
 from geopy.exc import GeocoderTimedOut
+import sys
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 # file_to_read = "../marawi_tweets_with_location/marawi_tweets_september/official/final_tweets/marawi_tweets_09_03.csv"
 # file_to_write1 = "../marawi_tweets_with_location/marawi_tweets_september/official/philippines_tweets/marawi_tweets_09_03.csv"
@@ -63,6 +67,7 @@ def get_location(location):
         index_2 = find_nth(place, "[", 1)
         print("index of [ = " + str(index_2)) 
         place = place[index_2+1:]
+        place = place.upper()
         print("place String = " + str(place))
 
         # for special cases: ACRONYMS
@@ -70,13 +75,55 @@ def get_location(location):
 
         if "'CEB'" in place:
             place.replace("'CEB'", "Cebu")
+        elif "'BUDA'" in place:
+            place.replace("'BUDA'", "Bukidnon-Davao")
         elif "'MNL'" in place:
             place.replace("'MNL'", "Manila")
         elif "'LB'" in place:
             place.replace("'LB'", "Los Baños")
+        elif "'COMVAL'" in place:
+            place.replace("'COMVAL'", "Compostela Valley")
+        elif "'CAR'" in place:
+            place.replace("'CAR'", "Cordillera Administrative Region")
+        elif "'CDO'" in place:
+            place.replace("'CDO'", "Cagayan de Oro")
+        elif "'CAR'" in place:
+            place.replace("'CAR'", "Cordillera Administrative Region")
+        elif "'LP'" in place:
+            place.replace("'LP'", "Las Piñas")
+        elif "'NCR'" in place:
+            place.replace("'NCR'", "National Capital Region")
+        elif "'BCD'" in place:
+            place.replace("'BCD'", "Bacolod")
+        elif "'DGT'" in place:
+            place.replace("'DGT'", "Dumaguete")
+        elif "'DVO'" in place:
+            place.replace("'DVO'", "Davao")
+        elif "'ILO'" in place:
+            place.replace("'ILO'", "Iloilo")
+        elif "'KLO'" in place:
+            place.replace("'KLO'", "Kalibo, Aklan")
+        elif "'LP'" in place:
+            place.replace("'LP'", "Las Piñas")
+        elif "'NEGOCC'" in place:
+            place.replace("'NEGOCC'", "Negros Occidental")
+        elif "'NEGOR'" in place:
+            place.replace("'NEGOR'", "Negros Oriental")
+        elif "'QC'" in place:
+            place.replace("'QC'", "Quezon City")
+        elif "'GENSAN'" in place:
+            place.replace("'GENSAN'", "General Santos")
+        elif "'GES'" in place:
+            place.replace("'GES'", "General Santos")
+        elif "'ZC'" in place:
+            place.replace("'ZC'", "Zamboanga City")
+        elif "'ZAM'" in place:
+            place.replace("'ZAM'", "Zamboanga City")
 
 
         location = geolocator.geocode(place)
+
+        if is_philippines(location)
 
         return location
     else:
@@ -85,7 +132,7 @@ def get_location(location):
 #-----------------------------------------------------------------------------------------------------
 def is_philippines(address):
     address = address.lower()
-    return "philippines" in address:
+    return "philippines" in address
         
 #-----------------------------------------------------------------------------------------------------
 def find_nth(haystack, needle, n):

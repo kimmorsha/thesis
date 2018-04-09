@@ -35,74 +35,74 @@ def csv_read_and_write(read_path, write_path):
                 i = i + 1
 #-----------------------------------------------------------------------------------------------------
 
-# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_08_01.csv",
-#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_01.csv")
+csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_01.csv",
+                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_01.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_02.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_02.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_02.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_02.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_03.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_03.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_03.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_03.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_04.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_04.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_04.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_04.csv")
 
-# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_05.csv",
-#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_05.csv")
+csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_05.csv",
+                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_05.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_06.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_06.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_06.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_06.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_07.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_07.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_07.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_07.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_08.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_08.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_08.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_08.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_09.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_09.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_09.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_09.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_10.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_10.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_10.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_10.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_11.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_11.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_11.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_11.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_12.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_12.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_12.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_12.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_13.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_13.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_13.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_13.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_14.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_14.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_14.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_14.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_15.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_15.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_15.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_15.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_16.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_16.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_16.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_16.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_17.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_17.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_17.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_17.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_18.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_18.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_18.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_18.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_19.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_19.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_19.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_19.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_20.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_20.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_20.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_20.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_21.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_21.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_21.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_21.csv")
 
-# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_22.csv",
-#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_22.csv")
+csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_22.csv",
+                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_22.csv")
 
-# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_23.csv",
-#                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_23.csv")
+csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_23.csv",
+                   "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_23.csv")
 
 # csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/all_tweets/marawi_tweets_10_24.csv",
 #                    "../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_24.csv")

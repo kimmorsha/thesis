@@ -30,8 +30,6 @@ def analyze_emotions(read_path, write_path1, write_path2):
                         tweet = remove_words_with_numbers(tweet)
                         print(i, tweet)
 
-
-
                         # data = [row[0],
                         #           row[1],
                         #           row[4],

@@ -5,11 +5,16 @@ import string
 from geopy.geocoders import Nominatim
 geolocator = Nominatim()
 from geopy.exc import GeocoderTimedOut
+import unicodedata
+import sys
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 # file_to_read = "../marawi_tweets_with_location/marawi_tweets_september/official/final_tweets/marawi_tweets_09_03.csv"
 # file_to_write1 = "../marawi_tweets_with_location/marawi_tweets_september/official/philippines_tweets/marawi_tweets_09_03.csv"
 # file_to_write2 = "../marawi_tweets_with_location/marawi_tweets_september/official/other_locations/marawi_tweets_09_03.csv"
-location = "(['Los Banos'])"
+location = "(['NegOcc'])"
 #------------------------------------------------------------------------------------------------------
 def csv_read_and_write(loc):
     # with open (write_path1, 'wb') as outFile1, open(write_path2, 'wb') as outFile2:
@@ -21,8 +26,9 @@ def csv_read_and_write(loc):
     #         for row in fileReader:
     #             loc = row[5]
     #             print("location : " + str(loc))
-                # loc = loc.encode('utf-8')
-                # location = get_location(loc)
+
+                # loc = unicodedata.normalize("NFKD", loc)
+                location = get_location(loc)
                 print("Address : " + str(location.address))
                 print("Latitude : " + str(location.latitude))
                 print("Longitude : " + str(location.longitude))
@@ -66,7 +72,6 @@ def get_location(location):
         place = place[index_2+1:]
         print("place String = " + str(place))
 
-        # place = place.decode('utf-8')
         # for special cases: ACRONYMS
 
         # if "'CEB'" in place:
