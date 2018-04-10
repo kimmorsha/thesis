@@ -119,6 +119,15 @@ def findLocation(user):
 
 # BACKLOG 1
 
+csv_read_and_write('../to_be_skimbordeng/marawi_tweets_05_22_1.csv', 
+                    '../to_be_skimbordeng/with_locations/marawi_tweets_05_22_1.csv')
+
+csv_read_and_write('../to_be_skimbordeng/marawi_tweets_05_23.csv', 
+                    '../to_be_skimbordeng/with_locations/marawi_tweets_05_23.csv')
+
+csv_read_and_write('../to_be_skimbordeng/marawi_tweets_05_24_2.csv', 
+                    '../to_be_skimbordeng/with_locations/marawi_tweets_05_24_2.csv')
+
 # csv_read_and_write('../to_be_skimbordeng/marawi_tweets_05_22_to_05_24.csv', 
 #                     '../to_be_skimbordeng/with_locations/marawi_tweets_05_22_to_05_24.csv')
 
@@ -191,8 +200,8 @@ def findLocation(user):
 # csv_read_and_write('../to_be_skimbordeng/marawi_tweets_09_17_to_09_18.csv', 
 #                     '../to_be_skimbordeng/with_locations/marawi_tweets_09_17_to_09_18.csv')
 
-csv_read_and_write('../to_be_skimbordeng/marawi_tweets_09_30_to_10_01.csv', 
-                    '../to_be_skimbordeng/with_locations/marawi_tweets_09_30_to_10_01.csv')
+# csv_read_and_write('../to_be_skimbordeng/marawi_tweets_09_30_to_10_01.csv', 
+#                     '../to_be_skimbordeng/with_locations/marawi_tweets_09_30_to_10_01.csv')
 
 # csv_read_and_write('../to_be_skimbordeng/marawi_tweets_10_04_to_10_05.csv', 
 #                     '../to_be_skimbordeng/with_locations/marawi_tweets_10_04_to_10_05.csv')
