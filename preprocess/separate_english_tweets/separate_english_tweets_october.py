@@ -39,7 +39,7 @@ def csv_read_and_write(read_path, write_path1, write_path2):
                 print(i)
 #--------------------------------------------------------------------------------------------------------
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_08_01.csv",
+csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_october/official/initial_preprocessed/marawi_tweets_10_01.csv",
                    "../../marawi_tweets_with_location/marawi_tweets_october/official/english_tweets/marawi_tweets_10_01.csv",
                    "../../marawi_tweets_with_location/marawi_tweets_october/official/non_english_tweets/marawi_tweets_10_01.csv")
 
