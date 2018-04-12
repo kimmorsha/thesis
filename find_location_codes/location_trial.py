@@ -6,6 +6,7 @@ from geopy.geocoders import Nominatim
 geolocator = Nominatim()
 from geopy.exc import GeocoderTimedOut
 import sys
+geolocator=Nominatim(timeout=5)
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -51,61 +52,61 @@ def csv_read_and_write(read_path, write_path1, write_path2):
                     place = place.encode('utf-8')
 
                     if "'CEB'" in place:
-                        place.replace("'CEB'", "Cebu")
+                        place = place.replace("'CEB'", "Cebu")
                     elif "'BUDA'" in place:
-                        place.replace("'BUDA'", "Bukidnon-Davao")
+                        place = place.replace("'BUDA'", "Bukidnon-Davao")
                     elif "'MNL'" in place:
-                        place.replace("'MNL'", "Manila")
+                        place = place.replace("'MNL'", "Manila")
                     elif "'LB'" in place:
-                        place.replace("'LB'", "Los Baños")
+                        place = place.replace("'LB'", "Los Baños")
                     elif "'COMVAL'" in place:
-                        place.replace("'COMVAL'", "Compostela Valley")
+                        place = place.replace("'COMVAL'", "Compostela Valley")
                     elif "'CAR'" in place:
-                        place.replace("'CAR'", "Cordillera Administrative Region")
+                        place = place.replace("'CAR'", "Cordillera Administrative Region")
                     elif "'CDO'" in place:
-                        place.replace("'CDO'", "Cagayan de Oro")
+                        place = place.replace("'CDO'", "Cagayan de Oro")
                     elif "'CAR'" in place:
-                        place.replace("'CAR'", "Cordillera Administrative Region")
+                        place = place.replace("'CAR'", "Cordillera Administrative Region")
                     elif "'LP'" in place:
-                        place.replace("'LP'", "Las Piñas")
+                        place = place.replace("'LP'", "Las Piñas")
                     elif "'NCR'" in place:
-                        place.replace("'NCR'", "National Capital Region")
+                        place = place.replace("'NCR'", "National Capital Region")
                     elif "'BCD'" in place:
-                        place.replace("'BCD'", "Bacolod")
+                        place = place.replace("'BCD'", "Bacolod")
                     elif "'DGT'" in place:
-                        place.replace("'DGT'", "Dumaguete")
+                        place = place.replace("'DGT'", "Dumaguete")
                     elif "'DVO'" in place:
-                        place.replace("'DVO'", "Davao")
+                        place = place.replace("'DVO'", "Davao")
                     elif "'ILO'" in place:
-                        place.replace("'ILO'", "Iloilo")
+                        place = place.replace("'ILO'", "Iloilo")
                     elif "'KLO'" in place:
-                        place.replace("'KLO'", "Kalibo, Aklan")
+                        place = place.replace("'KLO'", "Kalibo, Aklan")
                     elif "'LP'" in place:
-                        place.replace("'LP'", "Las Piñas")
+                        place = place.replace("'LP'", "Las Piñas")
                     elif "'NEGOCC'" in place:
-                        place.replace("'NEGOCC'", "Negros Occidental")
+                        place = place.replace("'NEGOCC'", "Negros Occidental")
                     elif "'NEGOR'" in place:
-                        place.replace("'NEGOR'", "Negros Oriental")
+                        place = place.replace("'NEGOR'", "Negros Oriental")
                     elif "'QC'" in place:
-                        place.replace("'QC'", "Quezon City")
+                        place = place.replace("'QC'", "Quezon City")
                     elif "'GENSAN'" in place:
-                        place.replace("'GENSAN'", "General Santos")
+                        place = place.replace("'GENSAN'", "General Santos")
                     elif "'GES'" in place:
-                        place.replace("'GES'", "General Santos")
+                        place = place.replace("'GES'", "General Santos")
                     elif "'ZC'" in place:
-                        place.replace("'ZC'", "Zamboanga City")
+                        place = place.replace("'ZC'", "Zamboanga City")
                     elif "'ZAM'" in place:
-                        place.replace("'ZAM'", "Zamboanga City")
+                        place = place.replace("'ZAM'", "Zamboanga City")
                     elif "'NRA'" in place:
-                        place.replace("'NRA'", "''")   
+                        place = place.replace("'NRA'", "''")   
 
                     location = geolocator.geocode(place)
-
-                    print("Address : " + str(location))
+                   
                     # print("Latitude : " + str(location.latitude))
                     # print("Longitude : " + str(location.longitude))
 
-                    if "Philippines" in location.address:
+                    if location is not None and "Philippines" in location.address:
+                        print("Address : " + str(location))
                         loc = "([" + str(location.address) + "], Location((" + str(location.latitude) + "," + str(location.latitude) + ")))"
                         data = [row[0],
                                 row[1],
@@ -221,11 +222,11 @@ csv_read_and_write(file_to_read,
 #         # for special cases: ACRONYMS
 
 #         # if "'CEB'" in place:
-#         #     place.replace("'CEB'", "Cebu")
+#         #     place = place.replace("'CEB'", "Cebu")
 #         # elif "'CDO'" in place:
-#         #     place.replace("'CDO'", "Cagadayan De Oro")
+#         #     place = place.replace("'CDO'", "Cagadayan De Oro")
 #         # elif "'ARMM'" in place:
-#         #     place.replace("'CDO'", "Cagadayan De Oro")
+#         #     place = place.replace("'CDO'", "Cagadayan De Oro")
 
 
 #         location = geolocator.geocode(place)
