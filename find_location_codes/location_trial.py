@@ -40,7 +40,7 @@ def csv_read_and_write(read_path, write_path1, write_path2):
                 location = row[3]
                 print("location : " + str(location))
 
-                if location is not None and location != "":
+                if location is not None:
                     index = find_nth(location, "]", 1)
                     place = location[:index]
                     index_2 = find_nth(place, "[", 1)
@@ -51,79 +51,85 @@ def csv_read_and_write(read_path, write_path1, write_path2):
                     # for special cases: ACRONYMS
                     place = place.encode('utf-8')
 
-                    if "'CEB'" in place:
-                        place = place.replace("'CEB'", "Cebu")
-                    elif "'BUDA'" in place:
-                        place = place.replace("'BUDA'", "Bukidnon-Davao")
-                    elif "'MNL'" in place:
-                        place = place.replace("'MNL'", "Manila")
-                    elif "'LB'" in place:
-                        place = place.replace("'LB'", "Los Baños")
-                    elif "'COMVAL'" in place:
-                        place = place.replace("'COMVAL'", "Compostela Valley")
-                    elif "'CAR'" in place:
-                        place = place.replace("'CAR'", "Cordillera Administrative Region")
-                    elif "'CDO'" in place:
-                        place = place.replace("'CDO'", "Cagayan de Oro")
-                    elif "'CAR'" in place:
-                        place = place.replace("'CAR'", "Cordillera Administrative Region")
-                    elif "'LP'" in place:
-                        place = place.replace("'LP'", "Las Piñas")
-                    elif "'NCR'" in place:
-                        place = place.replace("'NCR'", "National Capital Region")
-                    elif "'BCD'" in place:
-                        place = place.replace("'BCD'", "Bacolod")
-                    elif "'DGT'" in place:
-                        place = place.replace("'DGT'", "Dumaguete")
-                    elif "'DVO'" in place:
-                        place = place.replace("'DVO'", "Davao")
-                    elif "'ILO'" in place:
-                        place = place.replace("'ILO'", "Iloilo")
-                    elif "'KLO'" in place:
-                        place = place.replace("'KLO'", "Kalibo, Aklan")
-                    elif "'LP'" in place:
-                        place = place.replace("'LP'", "Las Piñas")
-                    elif "'NEGOCC'" in place:
-                        place = place.replace("'NEGOCC'", "Negros Occidental")
-                    elif "'NEGOR'" in place:
-                        place = place.replace("'NEGOR'", "Negros Oriental")
-                    elif "'QC'" in place:
-                        place = place.replace("'QC'", "Quezon City")
-                    elif "'GENSAN'" in place:
-                        place = place.replace("'GENSAN'", "General Santos")
-                    elif "'GES'" in place:
-                        place = place.replace("'GES'", "General Santos")
-                    elif "'ZC'" in place:
-                        place = place.replace("'ZC'", "Zamboanga City")
-                    elif "'ZAM'" in place:
-                        place = place.replace("'ZAM'", "Zamboanga City")
-                    elif "'NRA'" in place:
-                        place = place.replace("'NRA'", "''")   
-
-                    location = geolocator.geocode(place)
-                   
-                    # print("Latitude : " + str(location.latitude))
-                    # print("Longitude : " + str(location.longitude))
-
-                    if location is not None and "Philippines" in location.address:
-                        print("Address : " + str(location))
-                        loc = "([" + str(location.address) + "], Location((" + str(location.latitude) + "," + str(location.latitude) + ")))"
-                        data = [row[0],
-                                row[1],
-                                row[2],
-                                loc,
-                                row[4],
-                                row[5],
-                                row[6],
-                                row[7],
-                                row[8],
-                                row[9],
-                                row[10]]
+                    if "'Philippines'" in place:
                         file_writer1.writerow(data)
+                        print("***** in the PHILS. | Address : " + str(location))
                     else:
-                        file_writer2.writerow(data)
+                        if "'CEB'" in place:
+                            place = place.replace("'CEB'", "Cebu")
+                        elif "'BUDA'" in place:
+                            place = place.replace("'BUDA'", "Bukidnon-Davao")
+                        elif "'MNL'" in place:
+                            place = place.replace("'MNL'", "Manila")
+                        elif "'LB'" in place:
+                            place = place.replace("'LB'", "Los Baños")
+                        elif "'COMVAL'" in place:
+                            place = place.replace("'COMVAL'", "Compostela Valley")
+                        elif "'CAR'" in place:
+                            place = place.replace("'CAR'", "Cordillera Administrative Region")
+                        elif "'CDO'" in place:
+                            place = place.replace("'CDO'", "Cagayan de Oro")
+                        elif "'CAR'" in place:
+                            place = place.replace("'CAR'", "Cordillera Administrative Region")
+                        elif "'LP'" in place:
+                            place = place.replace("'LP'", "Las Piñas")
+                        elif "'NCR'" in place:
+                            place = place.replace("'NCR'", "National Capital Region")
+                        elif "'BCD'" in place:
+                            place = place.replace("'BCD'", "Bacolod")
+                        elif "'DGT'" in place:
+                            place = place.replace("'DGT'", "Dumaguete")
+                        elif "'DVO'" in place:
+                            place = place.replace("'DVO'", "Davao")
+                        elif "'ILO'" in place:
+                            place = place.replace("'ILO'", "Iloilo")
+                        elif "'KLO'" in place:
+                            place = place.replace("'KLO'", "Kalibo, Aklan")
+                        elif "'LP'" in place:
+                            place = place.replace("'LP'", "Las Piñas")
+                        elif "'NEGOCC'" in place:
+                            place = place.replace("'NEGOCC'", "Negros Occidental")
+                        elif "'NEGOR'" in place:
+                            place = place.replace("'NEGOR'", "Negros Oriental")
+                        elif "'QC'" in place:
+                            place = place.replace("'QC'", "Quezon City")
+                        elif "'GENSAN'" in place:
+                            place = place.replace("'GENSAN'", "General Santos")
+                        elif "'GES'" in place:
+                            place = place.replace("'GES'", "General Santos")
+                        elif "'ZC'" in place:
+                            place = place.replace("'ZC'", "Zamboanga City")
+                        elif "'ZAM'" in place:
+                            place = place.replace("'ZAM'", "Zamboanga City")
+                        elif "'NRA'" in place:
+                            place = place.replace("'NRA'", "''")
+
+
+                        location = do_geocode(place)
+
+                        print("Address : " + str(location))
+
+                        if location is not None and "Philippines" in location.address:
+                            loc = "([" + str(location.address) + "], Location((" + str(location.latitude) + "," + str(location.latitude) + ")))"
+                            data = [row[0],
+                                    row[1],
+                                    row[2], 
+                                    loc,
+                                    row[4],
+                                    row[5],
+                                    row[6],
+                                    row[7],
+                                    row[8],
+                                    row[9],
+                                    row[10]]
+                            file_writer1.writerow(data)
+                            print("***** in the PHILS. | Address : " + str(location))
+                        else:
+                            file_writer2.writerow(data)
+                            print("###### NOPE | Address : " + str(location))
                 else:
                     file_writer2.writerow(data)
+                    print("###### NOPE | Address : " + str(location))
 
 #-----------------------------------------------------------------------------------------------------
 def find_nth(haystack, needle, n):
@@ -132,6 +138,13 @@ def find_nth(haystack, needle, n):
         start = haystack.find(needle, start+len(needle))
         n -= 1
     return start
+
+#-----------------------------------------------------------------------------------------------------
+def do_geocode(address):
+    try:
+        return geolocator.geocode(address)
+    except GeocoderTimedOut:
+        return do_geocode(address)
 
 #-----------------------------------------------------------------------------------------------------
 
