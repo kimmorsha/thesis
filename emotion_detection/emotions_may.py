@@ -3,10 +3,10 @@
 import csv
 import string
 import json
+from itertools import islice
 from watson_developer_cloud import NaturalLanguageUnderstandingV1
 from watson_developer_cloud.natural_language_understanding_v1 \
   import Features, EmotionOptions
-
 
 readFile = '../marawi_tweets_with_location/marawi_tweets_september/official/cleaned_tweets/marawi_tweets_09_03.csv'
 writeFile1 = '../marawi_tweets_with_location/marawi_tweets_september/official/final_tweets/marawi_tweets_09_03.csv'
@@ -14,8 +14,8 @@ writeFile2 = '../marawi_tweets_with_location/marawi_tweets_september/official/fi
 #------------------------------------------------------------------------------------------------------
 def analyze_emotions(read_path, write_path1, write_path2):
       natural_language_understanding = NaturalLanguageUnderstandingV1(
-            username='5e002a7b-361d-4611-9bea-2175ab049b34',
-            password='5BvZsR4TRc0u',
+            username='c324a54b-5a43-4edb-90c8-56cf6f5f24aa',
+            password='8gW7E2nst2Wl',
             version='2018-03-16')
 
       with open (write_path1, 'wb') as outFile1, open (write_path2, 'w') as outFile2:
@@ -25,7 +25,12 @@ def analyze_emotions(read_path, write_path1, write_path2):
             i = 1
             with open(read_path,'r') as inFile:
                   fileReader = csv.reader(inFile)
+
+                  # for i in range(2056):
+                  #   next(fileReader)
+
                   for row in fileReader:
+                        # print("NOW WERE READY!!! NO SKIPPING THIS TIME HEHEHE")
                         tweet = row[4]
                         tweet = remove_words_with_numbers(tweet)
                         print(i, tweet)
@@ -139,18 +144,18 @@ def get_highest_emotion(anger, joy, sadness, fear, disgust):
 #                    "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/marawi_tweets_05_27.csv",
 #                    "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/no_emotions/marawi_tweets_05_27.csv")
 
-# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_may/official/cleaned_tweets/marawi_tweets_05_28.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/marawi_tweets_05_28.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/no_emotions/marawi_tweets_05_28.csv")
+analyze_emotions("../marawi_tweets_with_location/marawi_tweets_may/official/cleaned_tweets/marawi_tweets_05_28.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/marawi_tweets_05_28.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/no_emotions/marawi_tweets_05_28.csv")
 
-# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_may/official/cleaned_tweets/marawi_tweets_05_29.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/marawi_tweets_05_29.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/no_emotions/marawi_tweets_05_29.csv")
+analyze_emotions("../marawi_tweets_with_location/marawi_tweets_may/official/cleaned_tweets/marawi_tweets_05_29.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/marawi_tweets_05_29.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/no_emotions/marawi_tweets_05_29.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_may/official/cleaned_tweets/marawi_tweets_05_30.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/marawi_tweets_05_30.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/no_emotions/marawi_tweets_05_30.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_may/official/cleaned_tweets/marawi_tweets_05_30.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/marawi_tweets_05_30.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/no_emotions/marawi_tweets_05_30.csv")
 
-# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_may/official/cleaned_tweets/marawi_tweets_05_31.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/marawi_tweets_05_31.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/no_emotions/marawi_tweets_05_31.csv")
+analyze_emotions("../marawi_tweets_with_location/marawi_tweets_may/official/cleaned_tweets/marawi_tweets_05_31.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/marawi_tweets_05_31.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/no_emotions/marawi_tweets_05_31.csv")

@@ -14,8 +14,8 @@ writeFile2 = '../marawi_tweets_with_location/marawi_tweets_september/official/fi
 #------------------------------------------------------------------------------------------------------
 def analyze_emotions(read_path, write_path1, write_path2):
 	natural_language_understanding = NaturalLanguageUnderstandingV1(
-		username='ab458f9c-8b2e-4688-9ec0-ce7810b6f997',
-		password='Mnh5qTNFYrNN',
+		username='1572033b-4578-4a47-9a78-de682f345725',
+		password='NfHpqieFiUYD',
 		version='2018-03-16')
 
 	with open (write_path1, 'wb') as outFile1, open (write_path2, 'w') as outFile2:
@@ -121,126 +121,126 @@ def get_highest_emotion(anger, joy, sadness, fear, disgust):
 #-----------------------------------------------------------------------------------------------------
 # analyze_emotions(readFile, writeFile1, writeFile2)	
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_01.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_01.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_01.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_01.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_01.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_01.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_02.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_02.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_02.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_02.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_02.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_02.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_03.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_03.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_03.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_03.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_03.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_03.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_04.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_04.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_04.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_04.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_04.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_04.csv")
 
-# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_05.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_05.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_05.csv")
+analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_05.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_05.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_05.csv")
 
-# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_06.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_06.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_06.csv")
+analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_06.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_06.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_06.csv")
 
-# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_07.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_07.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_07.csv")
+analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_07.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_07.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_07.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_08.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_08.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_08.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_08.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_08.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_08.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_09.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_09.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_09.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_09.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_09.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_09.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_10.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_10.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_10.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_10.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_10.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_10.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_11.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_11.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_11.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_11.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_11.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_11.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_12.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_12.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_12.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_12.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_12.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_12.csv")
 
-# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_13.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_13.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_13.csv")
+analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_13.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_13.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_13.csv")
 
-# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_14.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_14.csv",
-                   # "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_14.csv")
+analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_14.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_14.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_14.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_15.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_15.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_15.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_15.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_15.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_15.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_16.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_16.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_16.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_16.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_16.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_16.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_17.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_17.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_17.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_17.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_17.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_17.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_18.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_18.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_18.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_18.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_18.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_18.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_19.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_19.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_19.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_19.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_19.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_19.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_20.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_20.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_20.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_20.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_20.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_20.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_21.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_21.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_21.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_21.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_21.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_21.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_22.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_22.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_22.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_22.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_22.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_22.csv")
 
-# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_23.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_23.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_23.csv")
+analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_23.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_23.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_23.csv")
 
-# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_24.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_24.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_24.csv")
+analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_24.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_24.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_24.csv")
 
-# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_25.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_25.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_25.csv")
+analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_25.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_25.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_25.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_26.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_26.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_26.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_26.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_26.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_26.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_27.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_27.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_27.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_27.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_27.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_27.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_28.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_28.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_28.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_28.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_28.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_28.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_29.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_29.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_29.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_29.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_29.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_29.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_30.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_30.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_30.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_30.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_30.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_30.csv")
 
-# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_31.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_31.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_31.csv")
+analyze_emotions("../marawi_tweets_with_location/marawi_tweets_august/official/cleaned_tweets/marawi_tweets_08_31.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/marawi_tweets_08_31.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_august/official/final_tweets/no_emotions/marawi_tweets_08_31.csv")
