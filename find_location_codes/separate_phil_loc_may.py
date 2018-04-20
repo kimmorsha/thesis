@@ -168,19 +168,19 @@ csv_read_and_write("../marawi_tweets_with_location/marawi_tweets_may/official/fi
                    "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/philippines_tweets/marawi_tweets_05_27.csv",
                    "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/other_locations/marawi_tweets_05_27.csv")
 
-# csv_read_and_write("../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/marawi_tweets_05_28.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/philippines_tweets/marawi_tweets_05_28.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/other_locations/marawi_tweets_05_28.csv")
+csv_read_and_write("../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/marawi_tweets_05_28.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/philippines_tweets/marawi_tweets_05_28.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/other_locations/marawi_tweets_05_28.csv")
 
-# csv_read_and_write("../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/marawi_tweets_05_29.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/philippines_tweets/marawi_tweets_05_29.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/other_locations/marawi_tweets_05_29.csv")
+csv_read_and_write("../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/marawi_tweets_05_29.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/philippines_tweets/marawi_tweets_05_29.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/other_locations/marawi_tweets_05_29.csv")
 
 csv_read_and_write("../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/marawi_tweets_05_30.csv",
                    "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/philippines_tweets/marawi_tweets_05_30.csv",
                    "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/other_locations/marawi_tweets_05_30.csv")
 
-# csv_read_and_write("../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/marawi_tweets_05_31.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/philippines_tweets/marawi_tweets_05_31.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/other_locations/marawi_tweets_05_31.csv")
+csv_read_and_write("../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/marawi_tweets_05_31.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/philippines_tweets/marawi_tweets_05_31.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/other_locations/marawi_tweets_05_31.csv")
 
