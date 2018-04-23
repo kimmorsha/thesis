@@ -70,11 +70,11 @@ def analyze_emotions(read_path, write_path):
 # analyze_emotions('../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/marawi_tweets_05_24.csv',
 # 				 '../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/with_emotions/marawi_tweets_05_24.csv')
 
-# analyze_emotions('../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/marawi_tweets_05_25.csv',
-# 				 '../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/with_emotions/marawi_tweets_05_25.csv')
+analyze_emotions('../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/raw/marawi_tweets_05_25.csv',
+				 '../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/with_emotions/marawi_tweets_05_25.csv')
 
-# analyze_emotions('../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/marawi_tweets_05_26.csv',
-# 				 '../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/with_emotions/marawi_tweets_05_25.csv')
+analyze_emotions('../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/raw/marawi_tweets_05_26.csv',
+				 '../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/with_emotions/marawi_tweets_05_26.csv')
 
 # analyze_emotions('../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/marawi_tweets_05_27.csv',
 # 				 '../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/with_emotions/marawi_tweets_05_27.csv')

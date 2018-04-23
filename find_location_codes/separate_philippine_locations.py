@@ -24,7 +24,6 @@ def csv_read_and_write(read_path, write_path1, write_path2):
         with open(read_path,'r') as inFile:
             fileReader = csv.reader(inFile)
             for row in fileReader:
-
                 data = [row[0],
                         row[1],
                         row[2],
@@ -132,6 +131,7 @@ def csv_read_and_write(read_path, write_path1, write_path2):
                     print("###### NOPE | Address : " + str(location))
 
 #-----------------------------------------------------------------------------------------------------
+
 def find_nth(haystack, needle, n):
     start = haystack.find(needle)
     while start >= 0 and n > 1:
@@ -140,6 +140,7 @@ def find_nth(haystack, needle, n):
     return start
 
 #-----------------------------------------------------------------------------------------------------
+
 def do_geocode(address):
     try:
         return geopy.geocode(address)

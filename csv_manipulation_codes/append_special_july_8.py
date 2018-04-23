@@ -4,9 +4,9 @@ import csv
 from polyglot.detect import Detector
 import string
 
-read_file1 = '../marawi_tweets_with_location/marawi_tweets_july/marawi_tweets_07_08_1.csv'
-read_file2 = '../marawi_tweets_with_location/marawi_tweets_july/marawi_tweets_07_08_2.csv'
-write_file = '../marawi_tweets_with_location/marawi_tweets_july/marawi_tweets_07_08.csv'
+read_file1 = '../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/no_pfm/philippines_tweets/marawi_tweets_05_24.csv'
+read_file2 = '../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/philippines_tweets/marawi_tweets_05_24.csv'
+write_file = '../marawi_tweets_with_location/marawi_tweets_may/marawi_tweets_07_08.csv'
 
 # write_file_with_locations = "../marawi_tweets_with_locations_separation/marawi_tweets_may/with_locations/marawi_tweets_with_locations_05_29_to_05_30.csv"
 # write_file_with_no_locations = "../marawi_tweets_with_locations_separation/marawi_tweets_may/no_locations/marawi_tweets_with_no_locations_05_29_to_05_30.csv"

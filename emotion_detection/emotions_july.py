@@ -26,8 +26,8 @@ def analyze_emotions(read_path, write_path1, write_path2):
 		with open(read_path,'r') as inFile:
 			fileReader = csv.reader(inFile)
 
-			for i in range(417):
-				next(fileReader)
+			# for i in range(417):
+			# 	next(fileReader)
 			
 			for row in fileReader:
 				tweet = row[4]
@@ -213,13 +213,13 @@ def get_highest_emotion(anger, joy, sadness, fear, disgust):
 # #                    "../marawi_tweets_with_location/marawi_tweets_july/official/final_tweets/marawi_tweets_07_22.csv",
 # #                    "../marawi_tweets_with_location/marawi_tweets_july/official/final_tweets/no_emotions/marawi_tweets_07_22.csv")
 
-analyze_emotions("../marawi_tweets_with_location/marawi_tweets_july/official/cleaned_tweets/marawi_tweets_07_23.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_july/official/final_tweets/marawi_tweets_07_23.csv",
-                   "../marawi_tweets_with_location/marawi_tweets_july/official/final_tweets/no_emotions/marawi_tweets_07_23.csv")
+# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_july/official/cleaned_tweets/marawi_tweets_07_23.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_july/official/final_tweets/marawi_tweets_07_23.csv",
+#                    "../marawi_tweets_with_location/marawi_tweets_july/official/final_tweets/no_emotions/marawi_tweets_07_23.csv")
 
-# analyze_emotions("../marawi_tweets_with_location/marawi_tweets_july/official/cleaned_tweets/marawi_tweets_07_24.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_july/official/final_tweets/marawi_tweets_07_24.csv",
-#                    "../marawi_tweets_with_location/marawi_tweets_july/official/final_tweets/no_emotions/marawi_tweets_07_24.csv")
+analyze_emotions("../marawi_tweets_with_location/marawi_tweets_july/official/cleaned_tweets/marawi_tweets_07_24.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_july/official/final_tweets/marawi_tweets_07_24.csv",
+                   "../marawi_tweets_with_location/marawi_tweets_july/official/final_tweets/no_emotions/marawi_tweets_07_24.csv")
 
 # # analyze_emotions("../marawi_tweets_with_location/marawi_tweets_july/official/cleaned_tweets/marawi_tweets_07_25.csv",
 # #                    "../marawi_tweets_with_location/marawi_tweets_july/official/final_tweets/marawi_tweets_07_25.csv",
