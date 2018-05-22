@@ -72,7 +72,7 @@ def append_csv_files(read_path1, read_path2, write_path):
             file_reader = csv.reader(inFile)
 
             for row in file_reader:
-                # plit date into DATE & TIME
+                # split date into DATE & TIME
                 dt = parse(row[1])
                 date = str(dt.month) + "/" + str(dt.day) + "/"+ str(dt.year)
                 time = str(dt.hour) + ":" + str(dt.minute) + ":" + str(dt.second)
