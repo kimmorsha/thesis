@@ -34,7 +34,7 @@ def csv_read_and_write(read_path, write_path):
 	                        row[1],
 	                        row[2],
 	                        row[3],
-	                        row[4],
+	                        "#PrayForMarawi",
 	                        row[5],
 	                        row[6],
 	                        row[7],
@@ -71,8 +71,8 @@ def decode_tweet(tweet):
 
 #csv_read_and_write(read_file, write_file)
 
-# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_may/official/all_tweets/marawi_tweets_05_23.csv",
-#                    "../../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/marawi_tweets_05_23.csv")
+csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_may/official/all_tweets/marawi_tweets_05_23.csv",
+                   "../../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/marawi_tweets_05_23.csv")
 
 # csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_may/official/all_tweets/marawi_tweets_05_24.csv",
 #                    "../../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/marawi_tweets_05_24.csv")
@@ -95,5 +95,5 @@ def decode_tweet(tweet):
 # csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_may/official/all_tweets/marawi_tweets_05_30.csv",
 #                    "../../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/marawi_tweets_05_30.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_may/official/all_tweets/marawi_tweets_05_31.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/marawi_tweets_05_31.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_may/official/all_tweets/marawi_tweets_05_31.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/marawi_tweets_05_31.csv")

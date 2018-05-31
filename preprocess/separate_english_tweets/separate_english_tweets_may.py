@@ -15,7 +15,7 @@ def csv_read_and_write(read_path, write_path1, write_path2):
 
         i = 1;
         with open(read_path,'r') as inFile:
-            fileReader = csv.reader(inFile)
+            fileReader = csv.reader(inFile) 
             for row in fileReader:
                 data = [row[0],
                         row[1],
@@ -41,9 +41,9 @@ def csv_read_and_write(read_path, write_path1, write_path2):
 #--------------------------------------------------------------------------------------------------------
 
 
-# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_may/official/initial_preprocessed/marawi_tweets_05_23.csv",
-#                    "../../marawi_tweets_with_location/marawi_tweets_may/official/english_tweets/marawi_tweets_05_23.csv",
-#                    "../../marawi_tweets_with_location/marawi_tweets_may/official/non_english_tweets/marawi_tweets_05_23.csv")
+csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_may/official/initial_preprocessed/marawi_tweets_05_23.csv",
+                   "../../marawi_tweets_with_location/marawi_tweets_may/official/english_tweets/marawi_tweets_05_23.csv",
+                   "../../marawi_tweets_with_location/marawi_tweets_may/official/non_english_tweets/marawi_tweets_05_23.csv")
 
 # csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_may/official/initial_preprocessed/marawi_tweets_05_24.csv",
 #                    "../../marawi_tweets_with_location/marawi_tweets_may/official/english_tweets/marawi_tweets_05_24.csv",
@@ -61,18 +61,18 @@ def csv_read_and_write(read_path, write_path1, write_path2):
 #                    "../../marawi_tweets_with_location/marawi_tweets_may/official/english_tweets/marawi_tweets_05_27.csv",
 #                    "../../marawi_tweets_with_location/marawi_tweets_may/official/non_english_tweets/marawi_tweets_05_27.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_may/official/initial_preprocessed/marawi_tweets_05_28.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_may/official/english_tweets/marawi_tweets_05_28.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_may/official/non_english_tweets/marawi_tweets_05_28.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_may/official/initial_preprocessed/marawi_tweets_05_28.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_may/official/english_tweets/marawi_tweets_05_28.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_may/official/non_english_tweets/marawi_tweets_05_28.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_may/official/initial_preprocessed/marawi_tweets_05_29.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_may/official/english_tweets/marawi_tweets_05_29.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_may/official/non_english_tweets/marawi_tweets_05_29.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_may/official/initial_preprocessed/marawi_tweets_05_29.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_may/official/english_tweets/marawi_tweets_05_29.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_may/official/non_english_tweets/marawi_tweets_05_29.csv")
 
 # csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_may/official/initial_preprocessed/marawi_tweets_05_30.csv",
 #                    "../../marawi_tweets_with_location/marawi_tweets_may/official/english_tweets/marawi_tweets_05_30.csv",
 #                    "../../marawi_tweets_with_location/marawi_tweets_may/official/non_english_tweets/marawi_tweets_05_30.csv")
 
-csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_may/official/initial_preprocessed/marawi_tweets_05_31.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_may/official/english_tweets/marawi_tweets_05_31.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_may/official/non_english_tweets/marawi_tweets_05_31.csv")
+# csv_read_and_write("../../marawi_tweets_with_location/marawi_tweets_may/official/initial_preprocessed/marawi_tweets_05_31.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_may/official/english_tweets/marawi_tweets_05_31.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_may/official/non_english_tweets/marawi_tweets_05_31.csv")
