@@ -25,7 +25,7 @@ def csv_read_and_write(read_path, write_path):
         with open(read_path,'r') as inFile:
             fileReader = csv.reader(inFile)
             for row in fileReader:
-                original_location = row[5]
+                original_location = row[3]
                 print("original_location = " + original_location)
                 if original_location is not "":
                     data = [row[0],
@@ -58,9 +58,9 @@ def csv_read_and_write(read_path, write_path):
                         data = [row[0],
                                 row[1],
                                 row[2],
-                                row[3],
-                                row[4],
                                 location,
+                                row[4],
+                                row[5],
                                 row[6],
                                 row[7],
                                 row[8],
@@ -118,9 +118,14 @@ def findLocation(user):
 #------------------------------------------------------------------------------
 
 # AUGUST
-print("for AUGUST")
+
+csv_read_and_write('../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/marawi_tweets_05_23.csv', 
+                    '../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/all_locations/marawi_tweets_05_23.csv')
+
+# print("for AUGUST")
 # csv_read_and_write('./marawi_tweets_august/marawi_tweets_08_02_to_08_03.csv', 
 #                     './marawi_tweets_with_location/marawi_tweets_august/marawi_tweets_08_02_to_08_03.csv')
+
 # csv_read_and_write('./marawi_tweets_august/marawi_tweets_08_03_to_08_05.csv', 
 #                     './marawi_tweets_with_location2/marawi_tweets_august/marawi_tweets_08_03_to_08_05.csv')
 
@@ -160,17 +165,17 @@ print("for AUGUST")
 # csv_read_and_write('./marawi_tweets_with_location/marawi_tweets_august/marawi_tweets_08_27_to_08_31.csv', 
 #                     './marawi_tweets_with_location2/marawi_tweets_august/marawi_tweets_08_27_to_08_31.csv')
 
-csv_read_and_write('../marawi_tweets_with_location/marawi_tweets_august/official/marawi_tweets_08_27.csv', 
-                   '../marawi_tweets_with_location/marawi_tweets_august/marawi_tweets_08_27.csv')
+# csv_read_and_write('../marawi_tweets_with_location/marawi_tweets_august/official/marawi_tweets_08_27.csv', 
+#                    '../marawi_tweets_with_location/marawi_tweets_august/marawi_tweets_08_27.csv')
 
-csv_read_and_write('../marawi_tweets_with_location/marawi_tweets_august/official/marawi_tweets_08_28.csv', 
-                   '../marawi_tweets_with_location/marawi_tweets_august/marawi_tweets_08_28.csv')
+# csv_read_and_write('../marawi_tweets_with_location/marawi_tweets_august/official/marawi_tweets_08_28.csv', 
+#                    '../marawi_tweets_with_location/marawi_tweets_august/marawi_tweets_08_28.csv')
 
-csv_read_and_write('../marawi_tweets_with_location/marawi_tweets_august/official/marawi_tweets_08_29.csv', 
-                   '../marawi_tweets_with_location/marawi_tweets_august/marawi_tweets_08_29.csv')
+# csv_read_and_write('../marawi_tweets_with_location/marawi_tweets_august/official/marawi_tweets_08_29.csv', 
+#                    '../marawi_tweets_with_location/marawi_tweets_august/marawi_tweets_08_29.csv')
 
-csv_read_and_write('../marawi_tweets_with_location/marawi_tweets_august/official/marawi_tweets_08_30.csv', 
-                   '../marawi_tweets_with_location/marawi_tweets_august/marawi_tweets_08_30.csv')
+# csv_read_and_write('../marawi_tweets_with_location/marawi_tweets_august/official/marawi_tweets_08_30.csv', 
+#                    '../marawi_tweets_with_location/marawi_tweets_august/marawi_tweets_08_30.csv')
 
-csv_read_and_write('../marawi_tweets_with_location/marawi_tweets_august/official/marawi_tweets_08_31_2.csv', 
-                   '../marawi_tweets_with_location/marawi_tweets_august/marawi_tweets_08_31_2.csv')
+# csv_read_and_write('../marawi_tweets_with_location/marawi_tweets_august/official/marawi_tweets_08_31_2.csv', 
+#                    '../marawi_tweets_with_location/marawi_tweets_august/marawi_tweets_08_31_2.csv')
