@@ -119,8 +119,11 @@ def findLocation(user):
 
 # AUGUST
 
-csv_read_and_write('../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/marawi_tweets_05_23.csv', 
-                    '../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/all_locations/marawi_tweets_05_23.csv')
+# csv_read_and_write('../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/marawi_tweets_05_23.csv', 
+#                     '../marawi_tweets_with_location/marawi_tweets_may/official/final_tweets/all_locations/marawi_tweets_05_23.csv')
+
+csv_read_and_write('../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/marawi_tweets_05_23.csv', 
+                    '../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/with_emotions/marawi_tweets_05_23.csv')
 
 # print("for AUGUST")
 # csv_read_and_write('./marawi_tweets_august/marawi_tweets_08_02_to_08_03.csv', 
