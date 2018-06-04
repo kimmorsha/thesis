@@ -4,13 +4,13 @@ import csv
 from polyglot.detect import Detector
 import string
 
-# read_file = "../marawi_tweets_with_location/marawi_tweets_june/marawi_tweets_06_07_to_06_08.csv"
-# write_file_with_locations = "../marawi_tweets_with_locations_separation/marawi_tweets_june/with_locations/marawi_tweets_with_locations_06_07_to_06_08.csv"
-# write_file_with_no_locations = "../marawi_tweets_with_locations_separation/marawi_tweets_june/no_locations/marawi_tweets_with_no_locations_06_07_to_06_08.csv"
+read_file = "../../marawi_tweets_with_location/marawi_tweets_may/marawi_tweets_06_07_to_06_08.csv"
+write_file_with_locations = "../../marawi_tweets_with_locations_separation/marawi_tweets_may/with_locations/marawi_tweets_with_locations_06_07_to_06_08.csv"
+write_file_with_no_locations = "../../marawi_tweets_with_locations_separation/marawi_tweets_may/no_locations/marawi_tweets_with_no_locations_06_07_to_06_08.csv"
 
 #--------------------------------------------------------------------------------------------------
 def separate_no_locations(read_path, write_path1, write_path2):
-    with open (write_path1, 'w') as outFile1, open (write_path2, 'w') as outFile2:
+    with open (write_path1, 'ab') as outFile1, open (write_path2, 'ab') as outFile2:
         file_writer_1 = csv.writer(outFile1)
         file_writer_2 = csv.writer(outFile2)
         i = 1;
@@ -28,6 +28,8 @@ def separate_no_locations(read_path, write_path1, write_path2):
                 i = i + 1
 
 #-----------------------------------------------------------------------------------------------------
+
+separate_no_locations(read_file, write_file_with_locations, write_file_with_no_locations)
 
 # separate_no_locations("../../marawi_tweets_with_location/marawi_tweets_may/official/cleaned_tweets/marawi_tweets_05_23.csv",
 #                    "../../marawi_tweets_with_location/marawi_tweets_may/official/english_tweets/marawi_tweets_05_23.csv",
@@ -49,18 +51,18 @@ def separate_no_locations(read_path, write_path1, write_path2):
 #                    "../../marawi_tweets_with_location/marawi_tweets_may/official/english_tweets/marawi_tweets_05_27.csv",
 #                    "../../marawi_tweets_with_location/marawi_tweets_may/official/non_english_tweets/marawi_tweets_05_27.csv")
 
-separate_no_locations("../../marawi_tweets_with_location/marawi_tweets_may/official/cleaned_tweets/marawi_tweets_05_28.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_may/official/english_tweets/marawi_tweets_05_28.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_may/official/non_english_tweets/marawi_tweets_05_28.csv")
+# separate_no_locations("../../marawi_tweets_with_location/marawi_tweets_may/official/cleaned_tweets/marawi_tweets_05_28.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_may/official/english_tweets/marawi_tweets_05_28.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_may/official/non_english_tweets/marawi_tweets_05_28.csv")
 
-separate_no_locations("../../marawi_tweets_with_location/marawi_tweets_may/official/cleaned_tweets/marawi_tweets_05_29.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_may/official/english_tweets/marawi_tweets_05_29.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_may/official/non_english_tweets/marawi_tweets_05_29.csv")
+# separate_no_locations("../../marawi_tweets_with_location/marawi_tweets_may/official/cleaned_tweets/marawi_tweets_05_29.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_may/official/english_tweets/marawi_tweets_05_29.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_may/official/non_english_tweets/marawi_tweets_05_29.csv")
 
-# separate_no_locations("../../marawi_tweets_with_location/marawi_tweets_may/official/cleaned_tweets/marawi_tweets_05_30.csv",
-#                    "../../marawi_tweets_with_location/marawi_tweets_may/official/english_tweets/marawi_tweets_05_30.csv",
-#                    "../../marawi_tweets_with_location/marawi_tweets_may/official/non_english_tweets/marawi_tweets_05_30.csv")
+# # separate_no_locations("../../marawi_tweets_with_location/marawi_tweets_may/official/cleaned_tweets/marawi_tweets_05_30.csv",
+# #                    "../../marawi_tweets_with_location/marawi_tweets_may/official/english_tweets/marawi_tweets_05_30.csv",
+# #                    "../../marawi_tweets_with_location/marawi_tweets_may/official/non_english_tweets/marawi_tweets_05_30.csv")
 
-separate_no_locations("../../marawi_tweets_with_location/marawi_tweets_may/official/cleaned_tweets/marawi_tweets_05_31.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_may/official/english_tweets/marawi_tweets_05_31.csv",
-                   "../../marawi_tweets_with_location/marawi_tweets_may/official/non_english_tweets/marawi_tweets_05_31.csv")
+# separate_no_locations("../../marawi_tweets_with_location/marawi_tweets_may/official/cleaned_tweets/marawi_tweets_05_31.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_may/official/english_tweets/marawi_tweets_05_31.csv",
+#                    "../../marawi_tweets_with_location/marawi_tweets_may/official/non_english_tweets/marawi_tweets_05_31.csv")

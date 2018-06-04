@@ -8,8 +8,8 @@ from watson_developer_cloud.natural_language_understanding_v1 \
   import Features, EmotionOptions
 
 
-readFile = '../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/marawi_tweets_05_24.csv'
-writeFile = '../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/with_emotions/marawi_tweets_05_24.csv'
+readFile = '../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/marawi_tweets_05_23.csv'
+writeFile = '../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/with_emotions/marawi_tweets_05_23.csv'
 #------------------------------------------------------------------------------------------------------
 def analyze_emotions(read_path, write_path):
 	# natural_language_understanding = NaturalLanguageUnderstandingV1(
@@ -65,7 +65,7 @@ def analyze_emotions(read_path, write_path):
 				i = i+1
 
 #-----------------------------------------------------------------------------------------------------
-# analyze_emotions(readFile, writeFile)
+analyze_emotions(readFile, writeFile)
 
 # analyze_emotions('../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/marawi_tweets_05_24.csv',
 # 				 '../marawi_tweets_with_location/marawi_tweets_may/official/prayformarawi_tweets/with_emotions/marawi_tweets_05_24.csv')

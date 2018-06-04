@@ -355,5 +355,3 @@ get_count_for_july()
 get_count_for_aug()
 get_count_for_sept()
 get_count_for_oct()
-
-
